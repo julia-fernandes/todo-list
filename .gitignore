@@ -1,0 +1,14 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Java / Maven
+target/
+
+# Node / Vue
+node_modules/
+dist/
+
+# Sistema
+.DS_Store
+Thumbs.db
