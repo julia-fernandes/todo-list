@@ -20,7 +20,7 @@ public class Todo {
     private String descricao;
 
     @Enumerated(EnumType.STRING)
-    private PrioridadeTodo prioridade;
+    private Prioridade prioridade;
 
-    private Boolean concluida;
+    private boolean concluida = false;
 }
