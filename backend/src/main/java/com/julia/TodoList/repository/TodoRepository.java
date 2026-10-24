@@ -9,5 +9,5 @@ import java.util.List;
 public interface TodoRepository extends JpaRepository<Todo, Integer> {
 
     List<Todo> findByPrioridade(Prioridade prioridade);
-    List<Todo> findByConcluida(Boolean concluida);
+    List<Todo> findByConcluida(boolean concluida);
 }
