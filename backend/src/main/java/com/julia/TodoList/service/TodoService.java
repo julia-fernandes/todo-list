@@ -30,6 +30,7 @@ public class TodoService {
     private TodoResponseDTO toResponseDTO(Todo todo){
 
         return new TodoResponseDTO(
+                todo.getId(),
                 todo.getTitulo(),
                 todo.getDescricao(),
                 todo.getPrioridade(),
