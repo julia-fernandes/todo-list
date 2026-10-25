@@ -24,12 +24,12 @@ public class TodoController {
         return todoService.listar();
     }
 
-    @GetMapping
-    public List<TodoResponseDTO> listarPorPrioridade(Prioridade prioridade){
+    @GetMapping("/prioridade")
+    public List<TodoResponseDTO> listarPorPrioridade(@RequestParam Prioridade prioridade){
         return todoService.listarPorPrioridade(prioridade);
     }
 
-    @GetMapping
+    @GetMapping("/concluidas")
     public List<TodoResponseDTO> listarConcluidas(boolean concluida){
         return todoService.listarConcluidas(concluida);
     }
